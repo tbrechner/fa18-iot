@@ -1,0 +1,13 @@
+.meters {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.controls {
+	width: 150px;
+	font-size: 32pt;
+	text-align: center;
+	padding: 15px;
+	background-color: green;
+	color: white;
+}
