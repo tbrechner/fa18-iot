@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/raphael.2.1.0.min.js"></script>
+        <script src="js/justgage.1.0.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/robot.js"></script>
+		<title>Robotics!</title>
+	</head>	
+
+	<body>
+	    <table align="center">
+            <tr>
+                <td class="meters">
+                    <div id="voltsGauge" ></div>
+                </td>
+                <td class="meters">
+                    <div id="distanceGauge" ></div>
+                </td>
+            </tr>
+        </table>
+
+        <table align="center">
+            <tr>
+                <td></td>
+                <td class="controls" onClick="sendControl('F-100');">W</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td  class="controls" onClick="sendControl('L-50');">A</td>
+                <td  class="controls" onClick="sendControl('S');">S</td>
+                <td  class="controls" onClick="sendControl('R-50');">D</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td  class="controls" onClick="sendControl('B-75');">Z</td>
+                <td></td>
+            </tr>
+        </table>
+		<script src="js/roboticgauge.js"></script>
+    </body>
+</html>
